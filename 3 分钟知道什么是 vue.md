@@ -18,6 +18,7 @@ vue 有自己的文件格式, 扩展名是".vue", **每个 vue 文件我们叫�
 </template>
 
 <script>
+  import { defineComponent } from "vue";
   export default defineComponent({
     data() {
       return {
@@ -38,7 +39,7 @@ vue 有自己的文件格式, 扩展名是".vue", **每个 vue 文件我们叫�
 可以看出:
 
 1. **vue**文件由`html`和`js`和`css`3 部分组成.
-2. 其中 js 部分只有一个函数, 参数是一个对象数据, 这个对象就是组件的定义.
+2. 其中 js 部分只有一个函数"defineComponent", 参数是一个对象数据, 这个对象就是组件的定义.
 3. 定义变量放在参数的`data`字段中, 例子中变义了 2 个变量`content`和`color`, 分别表示"`h1`"的内容和样式.
 4. 只有在`data`字段定义的变量才可以在 vue 的`template`模板中使用, **同时注意**`data`**是函数.**
 5. 模板中使用变量, 如果要绑定 dom 属性用":"语法, 比如":style". 内容绑定用"{{}}"语法.
@@ -55,6 +56,7 @@ vue 有自己的文件格式, 扩展名是".vue", **每个 vue 文件我们叫�
 </template>
 
 <script>
+  import { defineComponent } from "vue";
   export default defineComponent({
     data() {
       return {
