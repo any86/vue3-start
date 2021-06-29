@@ -19,7 +19,7 @@ export default defineComponent({
   },
   
   methods:{
-  	changeMsg(newMsg){
+  	changeMsg(newMsg:string){
       this.msg = newMsg;
     }
   }
