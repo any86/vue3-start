@@ -1,3 +1,1 @@
-# Vue 3 + Typescript + Vite
-
-课程源码
+# Vue 3 课程源码
