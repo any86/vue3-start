@@ -1,11 +1,25 @@
 <template>
   <router-view></router-view>
+  <button @click="isShowDialog = !isShowDialog">显示/隐藏</button>
+  <br />
+  <Dialog v-model="isShowDialog"/>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { defineComponent } from "vue";
+import Dialog from './components/Dialog.vue';
 export default defineComponent({
   name: "App",
+
+  components:{Dialog},
+
+  data(){
+    return {isShowDialog:false}
+  },
+
+  methods:{
+
+  }
 });
 </script>
 
