@@ -1,8 +1,8 @@
 <template>
   <router-view></router-view>
-  <button @click="isShowDialog = !isShowDialog">显示/隐藏</button>
+  <!-- <button @click="isShowDialog = !isShowDialog">显示/隐藏</button>
   <br />
-  <Dialog v-model:is-show="isShowDialog"/>
+  <Dialog v-model:is-show="isShowDialog"/> -->
 </template>
 
 <script lang="js">
