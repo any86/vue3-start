@@ -2,6 +2,42 @@
 # yarn lockfile v1
 
 
+"5a.css@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/5a.css/-/5a.css-0.1.19.tgz#0b7a0444323f8b2b2088c9cbd34f83b27b1feeb6"
+  integrity sha512-QzXzF6+fQohTRrm0ZyGzcBcFlSb8qeFiT9hzu6q9Y/EZHCFhXVrjXyW7s5eZm55FDKSmahtRBnxeTmswzlR+iw==
+  dependencies:
+    "@5a.css/functions" "^0.1.19"
+    "@5a.css/helpers" "^0.1.19"
+    "@5a.css/mixins" "^0.1.19"
+    "@5a.css/reset" "^0.1.19"
+    "@5a.css/vars" "^0.1.19"
+
+"@5a.css/functions@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@5a.css/functions/-/functions-0.1.19.tgz#31e9cf3b2e14cf3d7555cb06532aaa84dcc50fa1"
+  integrity sha512-Mm0jHxPNshZt3HH5aSp7NBOHZfI3QxOGESFH0nRNHHleD+SgPHTxKy7zPIBoZtBhXhWd7wzhl/3nJUTP/zb67A==
+
+"@5a.css/helpers@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@5a.css/helpers/-/helpers-0.1.19.tgz#5019c3a484ea09c01be224f582e6aef93797620d"
+  integrity sha512-t2o8MRGFdRUA4YBiN5Q7rJaWZiwyfqqebYetnAIymQuWVz83iM2ZmKJSDSTuZDsirO4iw4ooXlSJwEXt+ds91A==
+
+"@5a.css/mixins@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@5a.css/mixins/-/mixins-0.1.19.tgz#cbf1d35a14ac17d83f4d67fa114ca9294ca05617"
+  integrity sha512-LfgDY4ov3MPF5xXykBXo6LCxoYvumWslUtRB1Idoc9Abhlh/V9b328ISCxxFxklf8D59c2WKNhl3lUQehXLB0A==
+
+"@5a.css/reset@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@5a.css/reset/-/reset-0.1.19.tgz#94597843d5516acdb5fa1bca92f743ddbc3549c5"
+  integrity sha512-zUsWZ0EzJLGszTf9nH9Dhzcnr26POb1Qeb8akxP5EIjE2GV/Hk+/z3OQxDWFUzo5SBMdyoeXilJbVJNDyLA9oQ==
+
+"@5a.css/vars@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@5a.css/vars/-/vars-0.1.19.tgz#425479ab6177475d1a074dc011bc4a7be2983c80"
+  integrity sha512-4tTOq1sN8gSQZ1MdUnkmQZ3LcXZ8kERg+d9olTdazJJZvu93CQyOrUp1arOvLZYVvXqWdsonDmEeWDNXuUQdSw==
+
 "@babel/helper-validator-identifier@^7.14.0":
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.14.0.tgz#d26cad8a47c65286b15df1547319a5d0bcf27288"
@@ -98,7 +134,7 @@
     "@vue/compiler-dom" "3.0.11"
     "@vue/shared" "3.0.11"
 
-"@vue/devtools-api@^6.0.0-beta.14":
+"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.0.0-beta.14":
   version "6.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.15.tgz#ad7cb384e062f165bcf9c83732125bffbc2ad83d"
   integrity sha512-quBx4Jjpexo6KDiNUGFr/zF/2A4srKM9S9v2uHgMXSU//hjgq1eGzqkIFql8T9gfX5ZaVOUzYBP3jIdIR3PKIA==
@@ -666,6 +702,13 @@ vue@^3.0.5:
     "@vue/compiler-dom" "3.1.2"
     "@vue/runtime-dom" "3.1.2"
     "@vue/shared" "3.1.2"
+
+vuex@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-4.0.2.tgz#f896dbd5bf2a0e963f00c67e9b610de749ccacc9"
+  integrity sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.11"
 
 wrappy@1:
   version "1.0.2"
