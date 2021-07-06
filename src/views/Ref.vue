@@ -10,7 +10,7 @@ export default defineComponent({
   },
 
   mounted(){
-    console.log(this.elList);
+    console.log(this.$route);
   },
 
   methods: {

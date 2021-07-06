@@ -17,8 +17,7 @@ export default defineComponent({
     return {isShowDialog:false}
   },
 
-  methods:{
-
+  mounted(){
   }
 });
 </script>
