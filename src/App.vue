@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>
+  <main class="p-2">
+    <router-view></router-view>
+  </main>
   <!-- <button @click="isShowDialog = !isShowDialog">显示/隐藏</button>
   <br />
   <Dialog v-model:is-show="isShowDialog"/> -->
