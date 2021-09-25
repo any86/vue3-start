@@ -19,14 +19,14 @@ export default defineComponent({
     return {isShowDialog:false}
   },
 
-  methods:{
-
+  mounted(){
   }
 });
 </script>
 
 <style>
 #app {
+  padding:16px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
