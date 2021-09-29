@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
 import store from './store';
-// import '5a.css';
+import '5a.css';
 const app = createApp(App)
 app.use(router);
 app.use(store);
