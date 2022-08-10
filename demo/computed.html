@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://unpkg.com/axios@next"></script>
+
+  <title>computed</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>总价格: {{total}}</h1>
+    <button @click="change">让苹果涨价</button>
+  </div>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          appleNumber: 71,
+          applePrice: 11,
+          bananaNumber: 99,
+          bananaPrice: 12,
+        };
+      },
+
+      computed: {
+        total() {
+          return this.appleNumber * this.applePrice + this.bananaNumber * this.bananaPrice;
+        }
+      },
+
+      methods: {
+        change() {
+          this.applePrice++;
+        }
+      }
+    }).mount('#app');  
+  </script>
+</body>
+
+</html>

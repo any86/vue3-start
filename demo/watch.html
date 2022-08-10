@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://unpkg.com/axios@next"></script>
+
+  <title>data&methods</title>
+</head>
+
+<body>
+  <div id="app">
+    <!--控制-->
+    <select v-model="page">
+      <option v-for="n in 100" :key="n" :value="n">第{{ n }}页</option>
+    </select>
+
+    <button @click="page--">上一页</button>
+    <button @click="page++">下一页</button>
+
+    <!--显示-->
+    <div>
+      <p v-for="{ title,id } in list" :key="id">{{ title }}</p>
+    </div>
+  </div>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          page: 50,
+          list: [],
+        };
+      },
+
+      watch: {
+        page:{
+          handler(page) {
+          axios
+            .get(`https://cnodejs.org/api/v1/topics?limit=5`, { params: { page } })
+            .then((response) => {
+              const { data } = response.data;
+              this.list = data;
+            });
+        },
+        immediate:true,
+      },
+        }
+    }).mount('#app');
+  </script>
+</body>
+
+</html>
