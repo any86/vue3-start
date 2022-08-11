@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>v-model</title>
+</head>
+
+<body>
+  <div id="app">
+    <section>
+      <input v-model="input" />
+      <p>输入: {{ input }}</p>
+    </section>
+
+    <section>
+      <textarea v-model="textarea"></textarea>
+      <p style="white-space: pre-line;">输入: {{ textarea }}</p>
+    </section>
+
+
+    <section>
+      <input type="checkbox" id="checkbox" v-model="checked" />
+      <label for="checkbox">{{ checked }}</label>
+    </section>
+
+    <section>
+      <input type="checkbox" id="checkbox1" v-model="checked1" true-value="yes" false-value="no" />
+      <label for="checkbox1">{{ checked1 }}</label>
+    </section>
+
+    <section>
+      <input type="radio" id="one" value="One" v-model="picked" />
+      <label for="one">One</label>
+      <br />
+      <input type="radio" id="two" value="Two" v-model="picked" />
+      <label for="two">Two</label>
+      <br />
+      <span>Picked: {{ picked }}</span>
+    </section>
+
+    <section>
+      <select v-model="selected">
+        <option disabled value="">请选择一个</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+      <span>Selected: {{ selected }}</span>
+    </section>
+
+  </div>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return { input: '', textarea: '', checked: false, checked1: 'yes', picked: 'One', selected: 'C' };
+      },
+    }).mount('#app');
+  </script>
+</body>
+
+</html>
