@@ -3,7 +3,7 @@
   <Child color="#f44336" content="hi vue3" />
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import Child from "./Child.vue";
 export default defineComponent({

@@ -2,7 +2,7 @@
   <h1 :style="{ color }">{{ content }}</h1>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 export default defineComponent({
   props: {
