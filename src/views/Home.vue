@@ -3,6 +3,7 @@
   <router-link class="link" to="/props">新建组件(components & props)</router-link>
   <router-link class="link" to="/emit">父子组件通信($emit)</router-link>
   <router-link class="link" to="/v-model">自定义双向数据绑定(v-model))</router-link>
+  <router-link class="link" to="/hooks">生命周期钩子(mounted & beforeUnmount)</router-link>
 </template>
 
 <style lang="scss" scoped>
