@@ -2,16 +2,25 @@
   <span
     class="switch"
     :class="checked && 'switch--checked'"
-    @click="checked = !checked"
+    @click="onChange"
   ></span>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 export default defineComponent({
-  data() {
-    return { checked: false };
+  props:{
+    checked:{
+      type:Boolean,
+      default:false
+    }
   },
+
+  methods:{
+    onChange(){
+      this.$emit('update:checked',!this.checked);
+    }
+  }
 });
 </script>
 
@@ -41,7 +50,7 @@ export default defineComponent({
     box-shadow: 0 2px 4px #00230b33;
   }
   &--checked {
-    background-color: #4083c6;
+    background-color: #42b883;
     &:after {
       transform: translate3d(20px, 0, 0);
     }
