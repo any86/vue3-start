@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <title>crud</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <p>
+        <input
+          v-model="input"
+          type="text"
+          placeholder="随便输入点文字, 点击确定"
+        />
+        <button @click="add">增加</button>
+      </p>
+      <ul>
+        <li v-for="(item,index) in list">
+          <input v-model="item.title" type="text" />
+          <a @click="remove(index)"> 删除</a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            input: "",
+            list: [],
+          };
+        },
+
+        methods: {
+          add() {
+            // 不为空才能添加
+            if (!/^\s*$/.test(this.input)) {
+              this.list.push({ title: this.input });
+              this.input = "";
+            }
+          },
+
+          remove(index) {
+            this.list.splice(index, 1);
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
