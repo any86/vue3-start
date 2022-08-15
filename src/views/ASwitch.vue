@@ -45,18 +45,6 @@ export default defineComponent({
     &:after {
       transform: translate3d(20px, 0, 0);
     }
-
-    &:active {
-      &:after {
-        width: 26px;
-        transform: translate3d(12px, 0, 0);
-      }
-    }
-  }
-  &:active {
-    &:after {
-      width: 26px;
-    }
   }
 }
 </style>
