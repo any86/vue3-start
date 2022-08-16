@@ -6,7 +6,7 @@
   <router-link class="link" to="/hooks">生命周期钩子(mounted & beforeUnmount)</router-link>
   <router-link class="link" to="/slot-demo">插槽(slot)</router-link>
   <router-link class="link" to="/switch">switch组件</router-link>
-
+  <router-link class="link" to="/h">h函数</router-link>
 </template>
 
 <style lang="scss" scoped>
