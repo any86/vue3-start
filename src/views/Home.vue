@@ -8,7 +8,6 @@
   <router-link class="link" to="/switch">switch组件</router-link>
   <router-link class="link" to="/h">h函数</router-link>
   <router-link class="link" to="/store">vuex</router-link>
-
 </template>
 
 <style lang="scss" scoped>
