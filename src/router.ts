@@ -24,8 +24,8 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: "/", redirect: "/home" },
-    { path: "/router-1/:id?", component: Router1 },
-    { path: "/router-2", component: ()=>import('./views/RouterDemo/Router2.vue') },
+    { name: 'router1', path: "/router-1/:id?", component: Router1 },
+    { name: 'router2', path: "/router-2", component: () => import('./views/RouterDemo/Router2.vue') },
     ...asyncRoutes,
   ],
 });

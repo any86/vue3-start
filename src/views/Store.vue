@@ -1,7 +1,9 @@
 <template>
-  <h1 @click="changeUserName">{{ $store.state.userName }}</h1>
-  <h1>总数: {{ $store.state.count }}</h1>
-  {{ $store.getters.doneTodos }}
+  <article>
+    <h1 @click="changeUserName">{{ $store.state.userName }}</h1>
+    <h1>总数: {{ $store.state.count }}</h1>
+    {{ $store.getters.doneTodos }}
+  </article>
 </template>
 
 <script>

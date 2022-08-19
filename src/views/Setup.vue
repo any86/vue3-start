@@ -1,6 +1,8 @@
 <template>
-  <p>n : {{ n }}</p>
-  <p>s : {{ s }}</p>
+  <article>
+    <p>n : {{ n }}</p>
+    <p>s : {{ s }}</p>
+  </article>
 </template>
 
 <script>

@@ -2,7 +2,7 @@
   <Parent />
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import Parent from "./Emit/Parent.vue";
 export default defineComponent({
