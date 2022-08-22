@@ -5,7 +5,9 @@
   <router-view v-slot="{ Component, route }">
     <transition name="slide-right" mode="out-in">
       <keep-alive :max="10">
-        <component :is="Component" :key="route.path" />
+        <article>
+          <component :is="Component" :key="route.path" />
+        </article>
       </keep-alive>
     </transition>
   </router-view>
