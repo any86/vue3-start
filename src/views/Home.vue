@@ -16,7 +16,7 @@
     <router-link class="link" to="/h">h函数</router-link>
     <router-link class="link" to="/router-1/100">router-1</router-link>
     <router-link class="link" to="/router-2">router-2</router-link>
-    <router-link class="link" to="/store">vuex</router-link>
+    <router-link class="link" to="/vuex">vuex</router-link>
   </article>
 </template>
 

@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@5a.css/helpers': ^0.1.20
   '@types/lodash': ^4.14.182
+  '@types/node': ^18.7.9
   '@vitejs/plugin-vue': ^3.0.0
   echarts: ^5.3.3
   lodash: ^4.17.21
@@ -24,6 +25,7 @@ dependencies:
   vuex: 4.0.2_vue@3.2.37
 
 devDependencies:
+  '@types/node': 18.7.9
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.5+vue@3.2.37
   sass: 1.54.4
   typescript: 4.7.4
@@ -71,6 +73,10 @@ packages:
   /@types/lodash/4.14.182:
     resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
     dev: false
+
+  /@types/node/18.7.9:
+    resolution: {integrity: sha512-0N5Y1XAdcl865nDdjbO0m3T6FdmQ4ijE89/urOHLREyTXbpMWbSafx9y7XIsgWGtwUP2iYTinLyyW3FatAxBLQ==}
+    dev: true
 
   /@vitejs/plugin-vue/3.0.1_vite@3.0.5+vue@3.2.37:
     resolution: {integrity: sha512-Ll9JgxG7ONIz/XZv3dssfoMUDu9qAnlJ+km+pBA0teYSXzwPCIzS/e1bmwNYl5dcQGs677D21amgfYAnzMl17A==}

@@ -1,4 +1,15 @@
 import { createStore } from "vuex";
+import {reactive} from 'vue';
+
+export const store2 = reactive({
+  userName: "Russell",
+  count: 1,
+  todos: [
+    { title: '已完成', done: true },
+    { count: '未完成', done: false },
+  ],
+});
+
 
 // 创建一个新的 store 实例
 export default createStore({
