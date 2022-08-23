@@ -5,6 +5,7 @@ specifiers:
   '@types/lodash': ^4.14.182
   '@types/node': ^18.7.9
   '@vitejs/plugin-vue': ^3.0.0
+  any-touch: ^2.2.0
   echarts: ^5.3.3
   lodash: ^4.17.21
   sass: ^1.54.4
@@ -18,6 +19,7 @@ specifiers:
 dependencies:
   '@5a.css/helpers': 0.1.20
   '@types/lodash': 4.14.182
+  any-touch: 2.2.0
   echarts: 5.3.3
   lodash: 4.17.21
   vue: 3.2.37
@@ -36,6 +38,80 @@ packages:
 
   /@5a.css/helpers/0.1.20:
     resolution: {integrity: sha512-Wj1jEk2IOhZJni4lPNjbFtMNdAZix1WWC6xMuptpSRLZ8q8ZMJg9QSmTkbaicNemmeodTPRmvJXHrrOAy6S99A==}
+    dev: false
+
+  /@any-touch/compute/2.2.0:
+    resolution: {integrity: sha512-hrw74b/cVT8SmiKFLValmllajw+bBvTa5iUwIXFVVIJM9T3tO15zZC2QbjVz8Uwi6XjH932RDUILGMs2TNvyQg==}
+    dependencies:
+      '@any-touch/shared': 2.2.0
+      '@any-touch/vector': 2.2.0
+      tslib: 2.4.0
+    dev: false
+
+  /@any-touch/core/2.2.0:
+    resolution: {integrity: sha512-xMHAA5aLCatFto+4fQWyE4YAsyN/LsXS4mnYuVpqFYoNz8dl5FsB/TIyb9JrqMKLYMxxcZ9joqR8gDprH1lwBw==}
+    dependencies:
+      '@any-touch/shared': 2.2.0
+      any-event: 2.2.0
+    dev: false
+
+  /@any-touch/doubletap/2.2.0:
+    resolution: {integrity: sha512-g/Aj/4K2EocalpyKWoUL2HyxI+oJyO+6UwJvEvSpOTdjQXLnK155C0JhxC4pBAJS3yIwFXwU+/2ecagUABWTug==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+      '@any-touch/vector': 2.2.0
+    dev: false
+
+  /@any-touch/pan/2.2.0:
+    resolution: {integrity: sha512-uMkCHbTm5qWji/FvhumP9n1ZCkPU7hy864g+ZhoWZ0OWAmn7s/TKRo4UqPBfqEPUMV6obGZvatrrgBLWT6J57w==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+    dev: false
+
+  /@any-touch/pinch/2.2.0:
+    resolution: {integrity: sha512-TVLbjvdH2/lKUDSEOqPUi7VoXqAKn1MtsVNHNedpY//vv39Y9+OTfG/6qQoaH8ZS3g/C8cLyoGDu8W9P95b9zQ==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+    dev: false
+
+  /@any-touch/press/2.2.0:
+    resolution: {integrity: sha512-+iIxniO6wrCh621fScGXARgjCxjn/XpqfwxHd7Pq7MVJl51sFrQu1pxWOk6j/I+FA3YfPU9kInO2H45BADWBXw==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+    dev: false
+
+  /@any-touch/rotate/2.2.0:
+    resolution: {integrity: sha512-tRph/mSYWXFtrwwtpNzuIcjlyXh1sQvJf/XGJCBVEmi+ePWZRTIc7OV9fLOVZSfXui/9Z+9UYSTSZHJw31skyg==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+    dev: false
+
+  /@any-touch/shared/2.2.0:
+    resolution: {integrity: sha512-2n1zWaATi/3osr/dkIUq5O7aSffKUsTM4DsIbPMW1VEO77v/rX2HkLoxt2Djzj5eCGh7An55Vw8NeA33kTTSRA==}
+    dev: false
+
+  /@any-touch/swipe/2.2.0:
+    resolution: {integrity: sha512-AzHKVuUpZzIaFUq4D4jXSaqfSyKEM/ipqnwKv4439z7R7OKWD5n8sI3T5jDDGKaUe+IIoOYVOgmwPDVCflfw4Q==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+    dev: false
+
+  /@any-touch/tap/2.2.0:
+    resolution: {integrity: sha512-x+FIa/0iaKdXI6aKosThWmuGgPYX9U+QFO3Xp1xBjIMmKevDBOqVzFFFDMj8BU0fuY0aU8a+UfVKpMnar6Y87Q==}
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+      '@any-touch/vector': 2.2.0
+    dev: false
+
+  /@any-touch/vector/2.2.0:
+    resolution: {integrity: sha512-t7pGYegIDCJl+swwsohZHZKmF71ZMt+hjwVEyhaEP6nQhcx6S7zulxnRxNp1t8s+c/JdK02Q89HnzQ4Ukg4+IA==}
+    dependencies:
+      '@any-touch/shared': 2.2.0
     dev: false
 
   /@babel/helper-string-parser/7.18.10:
@@ -195,6 +271,27 @@ packages:
 
   /@vue/shared/3.2.37:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==}
+
+  /any-event/2.2.0:
+    resolution: {integrity: sha512-PB4sEiVUjL+5mLmwlAGYdI5/1ouckapxS6+RPIvrGXv9XTMav7M3k3rR/f9fwAR+e2608CTR3FOR5HrOEYTtKA==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
+
+  /any-touch/2.2.0:
+    resolution: {integrity: sha512-UnqDiRHefksz5K/Vnv8NAJX1xrQvA8Cpe4auwMs/EyI3rJlW3uo8eGYcLcU2AOBmwxBQh/aTtFondkkPmi1vcg==}
+    dependencies:
+      '@any-touch/core': 2.2.0
+      '@any-touch/doubletap': 2.2.0
+      '@any-touch/pan': 2.2.0
+      '@any-touch/pinch': 2.2.0
+      '@any-touch/press': 2.2.0
+      '@any-touch/rotate': 2.2.0
+      '@any-touch/swipe': 2.2.0
+      '@any-touch/tap': 2.2.0
+      any-event: 2.2.0
+      tslib: 2.4.0
+    dev: false
 
   /anymatch/3.1.2:
     resolution: {integrity: sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==}
@@ -622,6 +719,10 @@ packages:
 
   /tslib/2.3.0:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: false
 
   /typescript/4.7.4:
