@@ -18,8 +18,12 @@
     <router-link class="link" to="/router-2">router-2</router-link>
     <router-link class="link" to="/vuex">vuex</router-link>
     <router-link class="link" to="/pinia">pinia</router-link>
-    
-    <p class="mt-2">https://www.yuque.com/books/share/c0ab3348-87ab-4e77-a34e-10ede7dfb00e?# 《🚼️ 给新手的vue3保姆教学》密码：wru9</p>
+
+    <h2>🚼️给新手的vue3保姆教学</h2>
+    <p class="mt-2">
+      <a class="link" href="https://www.yuque.com/books/share/c0ab3348-87ab-4e77-a34e-10ede7dfb00e">https://www.yuque.com/books/share/c0ab3348-87ab-4e77-a34e-10ede7dfb00e</a>
+    </p>
+    <p>密码：wru9</p>
   </article>
 </template>
 
