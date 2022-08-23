@@ -1,25 +1,9 @@
 <template>
-  <article>
-    <p>n : {{ n }}</p>
-    <p>s : {{ s }}</p>
-  </article>
+  <h1 v-for="n in 3" :key="n" :ref="getTitleRefs">标题{{ n }}</h1>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
-export default defineComponent({
-  setup() {
-    return { n: ref("1"), s: "你好" };
-  },
-
-  methods: {
-    changeN() {
-      this.n = "一";
-    },
-
-    changeS() {
-      this.s = "hello";
-    },
-  },
-});
+<script setup>
+function getTitleRefs(el) {
+  console.log(el);
+}
 </script>
