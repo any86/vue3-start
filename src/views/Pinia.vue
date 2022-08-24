@@ -7,5 +7,11 @@
 
 <script setup>
 import { useStore } from "@/pStore";
+import { storeToRefs } from "pinia";
+import { watch } from "vue";
 const store = useStore();
+const state = storeToRefs(store);
+watch(state.count, (count) => {
+  console.log(count);
+});
 </script>
