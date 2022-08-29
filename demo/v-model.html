@@ -17,6 +17,12 @@
     </section>
 
     <section>
+      <input :value="input"  @input="changeInput"/>
+      <p>输入: {{ input }}</p>
+    </section>
+
+
+    <section>
       <textarea v-model="textarea"></textarea>
       <p style="white-space: pre-line;">输入: {{ textarea }}</p>
     </section>
@@ -59,6 +65,12 @@
       data() {
         return { input: '', textarea: '', checked: false, checked1: 'yes', picked: 'One', selected: 'C' };
       },
+
+      methods:{
+        changeInput(e){
+          this.input = e.target.value;
+        }
+      }
     }).mount('#app');
   </script>
 </body>
